@@ -52,6 +52,12 @@ hr {
 span {
     margin-top: 10px;
 }
+.eth-span {
+    color: rgb(26,250,251);
+}
+.clock-span {
+    color: rgb(114, 141, 175);
+}
 .avatar {
     width: 25px;
     height:25px;
