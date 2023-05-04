@@ -1,31 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 * {
     margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(213,225, 239);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    background-color: rgb(13, 25, 46);
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
 }
 main {
-    background-color: rgb(21,38,63);
-    width: 270px;
-    height: 460px;
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 500px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 0 0 50px black;
 }
 .qube {
     background: url(../images/cube.jpg) no-repeat;
+    border-radius: 25px;
     width: 90%;
     height: 50%;
     background-size: contain;
     margin: 15px;
-    border-radius: 15px;
     background-position: center;
+    margin: 15px auto;
+    transition: all ease-out 0.5s;
+}
+.qube:hover {
+    background: url(../images/view.svg) no-repeat;
+    background-position: center;
+    background-color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 .text {
     margin-left: 25px;
@@ -34,10 +42,14 @@ h1 {
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: white;
+    color:hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif ;
+    font-weight: 600;
 }
-p {
-    color: rgb(119, 139, 165);
+.equilibrum-p {
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
 }
 .amount-time-div{
     display: flex;
@@ -53,26 +65,32 @@ span {
     margin-top: 10px;
 }
 .eth-span {
-    color: rgb(26,250,251);
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    width: 110px;
 }
 .clock-span {
     color: rgb(114, 141, 175);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
 }
 .avatar {
     width: 25px;
     height:25px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .av-span {
     justify-content: space-between;
 }
-.avatar-div {
+footer {
     display: flex;
+    width: 275px;
 }
 .avatar-p {
-    margin-right: 50px
-
+    color: rgb(119, 139, 165);
+    margin-right: 70px
 }
 .creator-span {
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
